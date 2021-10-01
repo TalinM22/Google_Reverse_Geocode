@@ -5,7 +5,7 @@ import time
 ## Add key here
 gmaps = googlemaps.Client(key='abc123')
 
-## Function to retrieve demographic info based on lat-long
+## Function to retrieve demographic info based on lat-long from JSON repsonse
 def get_location(_lat,_lng):
 
     r_geocode_result = gmaps.reverse_geocode((_lat, _lng))
